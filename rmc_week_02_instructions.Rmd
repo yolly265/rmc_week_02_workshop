@@ -2,6 +2,7 @@
 title: "Burden of Disease Report"
 subtitle: "Collaborative GitHub and RMarkdown Practice"
 author: "The GRAPH Courses Team"
+output: prettydoc::html_pretty
 ---
 
 # Intro
@@ -50,7 +51,7 @@ If your groups finishes early, try to calculate and add a plot showing the *cumu
 
 # TASK 5: SUBMIT
 
-To submit, each group member should paste the link to the group's GitHub repo in the submission box on the course platform.
+To submit, each group member should paste the link to the group's GitHub repo in the submission box on the course platform. This will be the same repo for all group members. But each group member should submit the link individually. From the commit history, we will be able to see who contributed to the repo.
 
 # TASK 6: PRESENT (OPTIONAL)
 
