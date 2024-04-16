@@ -1,7 +1,6 @@
 ---
 title: "Global Disease Burden Analysis"
 author: "REPLACE WITH THE AUTHOR NAMES" # AUTHOR NAMES HERE!
-date: "`r Sys.Date()`"
 output: github_document
 ---
 
