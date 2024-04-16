@@ -22,7 +22,7 @@ As a group, decide on three countries you want to analyze and compare in your re
 
 # TASK 3: COMPLETE THE CHILD DOCUMENTS
 
-The repo contains a main RMarkdown file `burden_of_disease_report.Rmd` which pulls in three child documents:
+The "rmd" folder of the repo contains a main RMarkdown file `burden_of_disease_report.Rmd` which pulls in three child documents:
 
 1. `cmnn_burden.Rmd`: This document will compare the DALY burden of communicable, maternal, neonatal, and nutritional diseases for the three countries.
 
@@ -30,15 +30,9 @@ The repo contains a main RMarkdown file `burden_of_disease_report.Rmd` which pul
 
 3. `overall_burden.Rmd`: This document will compare the overall DALY burden for the three countries.
 
-Each group member should take responsibility for completing one of these child documents. If there are two group members, you should only complete two of the three child documents.
+Each group member should take responsibility for completing one of these child documents. If there are two group members, you should only complete two child documents. If there are three group members, each person should complete one child document.
 
-Within each child document, you need to:
-
-- Import the relevant dataset from the `data` folder. There are three datasets available, one for each type of disease burden.
-- Filter the data for your three chosen countries
-- Create and render a table showing the DALY burden for the three countries in 2018 and 2019
-- Create a plot visualizing the DALY burden over time for the three countries
-- Write a very short explanatory paragraph interpreting the results
+Read the instructions in your assigned child document and complete the tasks, analyzing the DALY burden for the three countries.
 
 Each group member should complete these steps, commit their changes, and push to the remote repo.
 
@@ -48,13 +42,16 @@ Once all group members have completed their child documents, the repo owner shou
 
 Commit and push the final rendered report to GitHub. 
 
-Then go online to your repo and check that the report renders correctly.
+Then go online to your repo and check that the report renders correctly. The images and tables should be visible.
+
+# CHALLENGE (OPTIONAL)
+
+If your groups finishes early, try to calculate and add a plot showing the *cumulative* DALY burden for the three countries over time, for each of the three burden estimate types.
 
 # TASK 5: SUBMIT
 
 To submit, each group member should paste the link to the group's GitHub repo in the submission box on the course platform.
 
-# CHALLENGE
+# TASK 6: PRESENT (OPTIONAL)
 
-Please ask your instructor for the challenge task for this workshop.
-
+If you finish on time, you may be approached to present your group's report to the class. You will present one of your plots and summarize what it shows.

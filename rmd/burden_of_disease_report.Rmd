@@ -12,7 +12,7 @@ library(tidyverse)
 
 # Introduction
 
-This document synthesizes our analysis of the global disease burden for selected countries, comparing the burden due to communicable, maternal, neonatal, and nutritional diseases (CMNN), non-communicable diseases (NCDs), and overall disease burden. We present tables and plots to visualize the trends in disease burden over time and provide a summary of our findings.
+This document synthesizes our analysis of the global disease burden for selected countries, comparing the burden due to communicable, maternal, neonatal, and nutritional diseases (CMNN), non-communicable diseases (NCDs), and overall disease burden. The source data is from the Institute for Health Metrics and Evaluation (IHME) Global Burden of Disease (GBD) study. We present tables and plots to visualize the trends in disease burden over time.
 
 ```{r child='cmnn_burden.Rmd'}
 ```
