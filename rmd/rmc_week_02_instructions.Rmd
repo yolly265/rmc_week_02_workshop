@@ -1,0 +1,60 @@
+---
+title: "Burden of Disease Report"
+subtitle: "Collaborative GitHub and RMarkdown Practice"
+author: "The GRAPH Courses Team"
+---
+
+# Intro
+
+In this workshop, you will work in groups to create a report on the burden of disease for three countries of your choice. The goal is to practice collaborative coding using GitHub and modular RMarkdown reports. 
+
+Below you'll find the tasks to guide you through the process.
+
+# TASK 1: FORK AND CLONE THE REPO
+
+One group member (the repo "owner") should fork the template repository from The GRAPH Courses GitHub account. Then add the other group members as collaborators on the forked repo.
+
+All group members should then clone the repo to their local machines.
+
+# TASK 2: CHOOSE THREE COUNTRIES 
+
+As a group, decide on three countries you want to analyze and compare in your report. Make sure each group member knows which countries were selected.
+
+# TASK 3: COMPLETE THE CHILD DOCUMENTS
+
+The repo contains a main RMarkdown file `burden_of_disease_report.Rmd` which pulls in three child documents:
+
+1. `cmnn_burden.Rmd`: This document will compare the DALY burden of communicable, maternal, neonatal, and nutritional diseases for the three countries.
+
+2. `ncd_burden.Rmd`: This document will compare the DALY burden of non-communicable diseases for the three countries.
+
+3. `overall_burden.Rmd`: This document will compare the overall DALY burden for the three countries.
+
+Each group member should take responsibility for completing one of these child documents. If there are two group members, you should only complete two of the three child documents.
+
+Within each child document, you need to:
+
+- Import the relevant dataset from the `data` folder. There are three datasets available, one for each type of disease burden.
+- Filter the data for your three chosen countries
+- Create and render a table showing the DALY burden for the three countries in 2018 and 2019
+- Create a plot visualizing the DALY burden over time for the three countries
+- Write a very short explanatory paragraph interpreting the results
+
+Each group member should complete these steps, commit their changes, and push to the remote repo.
+
+# TASK 4: PULL AND RENDER THE MAIN REPORT
+
+Once all group members have completed their child documents, the repo owner should pull everyone's changes. Then render the main `burden_of_disease_report.Rmd` which will pull in the completed child docs.
+
+Commit and push the final rendered report to GitHub. 
+
+Then go online to your repo and check that the report renders correctly.
+
+# TASK 5: SUBMIT
+
+To submit, each group member should paste the link to the group's GitHub repo in the submission box on the course platform.
+
+# CHALLENGE
+
+Please ask your instructor for the challenge task for this workshop.
+

@@ -1,0 +1,29 @@
+# Overall Disease Burden
+
+```{r}
+# Load necessary packages
+pacman::p_load(tidyverse, knitr, here)
+
+# Import the overall disease data
+data_overall <- read_csv(here("data", "burden-of-disease-all-causes.csv"))
+```
+
+## Table of Recent Estimates (2018 and 2019)
+
+```{r}
+# Here render a table for the year 2018 and 2019 DALY burden for the three countries 
+# Use kable() from the knitr package.
+```
+
+## Plot Showing Trends Over Time
+
+```{r}
+# Here, plot a line graph showing the trend of DALY burden for the chosen countries over time. You can use ggplot2 to create this plot. Each country's line should be a different color.
+```
+
+## Summary
+
+```{r}
+# Provide a brief analysis based on the data presented in the table and chart. Highlight any significant findings or patterns. About 3 sentences
+```
+
