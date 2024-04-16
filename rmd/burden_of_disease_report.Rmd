@@ -4,14 +4,15 @@ author: "REPLACE WITH THE AUTHOR NAMES" # AUTHOR NAMES HERE!
 output: github_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-library(tidyverse)
+```{r include = F}
+knitr::opts_chunk$set(echo = FALSE)
 ```
 
 # Introduction
 
-This document synthesizes our analysis of the global disease burden for selected countries, comparing the burden due to communicable, maternal, neonatal, and nutritional diseases (CMNN), non-communicable diseases (NCDs), and overall disease burden. The source data is from the Institute for Health Metrics and Evaluation (IHME) Global Burden of Disease (GBD) study. We present tables and plots to visualize the trends in disease burden over time.
+This document compares the Disability-Adjusted Life Year (DALY) diseases burden for three countries: COUNTRY 1, COUNTRY 2, and COUNTRY 3. We compare the burden due to communicable, maternal, neonatal, and nutritional diseases (CMNN), non-communicable diseases (NCDs), and overall disease burden for these countries. 
+
+The source data is from the Institute for Health Metrics and Evaluation (IHME) Global Burden of Disease (GBD) study. 
 
 ```{r child='cmnn_burden.Rmd'}
 ```

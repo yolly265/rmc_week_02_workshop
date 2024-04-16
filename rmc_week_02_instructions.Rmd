@@ -7,13 +7,15 @@ output: prettydoc::html_pretty
 
 # Intro
 
-In this workshop, you will work in groups to create a report on the burden of disease for three countries of your choice. The goal is to practice collaborative coding using GitHub and modular RMarkdown reports. 
+In this workshop, you will work in groups of 2-3 to create a report on the burden of disease for three countries of your choice. The goal is to practice collaborative coding using GitHub and modular RMarkdown reports. 
 
-Below you'll find the tasks to guide you through the process.
+You can see a minimal example output of the report here: [https://github.com/the-graph-courses/misc_public/blob/main/rmc_week_02_workshop/rmd/burden_of_disease_report.md](https://github.com/the-graph-courses/misc_public/blob/main/rmc_week_02_workshop/rmd/burden_of_disease_report.md){target="_blank"}.
 
 # TASK 1: FORK AND CLONE THE REPO
 
-One group member (the repo "owner") should fork the template repository from The GRAPH Courses GitHub account. Then add the other group members as collaborators on the forked repo.
+Pick one group member to be the repo "owner". They will fork the template repository from here: [https://github.com/the-graph-courses/rmc_week_02_workshop](https://github.com/the-graph-courses/rmc_week_02_workshop){target="_blank"}.
+
+Then they will add the other group members as collaborators on the forked repo.
 
 All group members should then clone the repo to their local machines.
 
@@ -37,9 +39,11 @@ Read the instructions in your assigned child document and complete the tasks, an
 
 Each group member should complete these steps, commit their changes, and push to the remote repo.
 
-# TASK 4: PULL AND RENDER THE MAIN REPORT
+# TASK 4: RENDER THE MAIN REPORT
 
-Once all group members have completed their child documents, the repo owner should pull everyone's changes. Then render the main `burden_of_disease_report.Rmd` which will pull in the completed child docs.
+Once all group members have completed their child documents, the repo owner should pull everyone's changes. 
+
+Then render the main `burden_of_disease_report.Rmd` which will pull in the completed child docs. Make sure that only key outputs are displayed in the main report, not the code or package loading messages. The render output should be in github_document format.
 
 Commit and push the final rendered report to GitHub. 
 
@@ -55,4 +59,4 @@ To submit, each group member should paste the link to the group's GitHub repo in
 
 # TASK 6: PRESENT (OPTIONAL)
 
-If you finish on time, you may be approached to present your group's report to the class. You will present one of your plots and summarize what it shows.
+If you finish on time, you may be approached to present one of your plots and summarize what it shows.
