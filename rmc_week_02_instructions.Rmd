@@ -25,7 +25,7 @@ As a group, decide on three countries you want to analyze and compare in your re
 
 # TASK 3: COMPLETE THE CHILD DOCUMENTS
 
-The "rmd" folder of the repo contains a main RMarkdown file `burden_of_disease_report.Rmd` which pulls in three child documents:
+The "rmd" folder of the repo contains a main RMarkdown file `burden_of_disease_report.Rmd` which includes three child documents:
 
 1. `cmnn_burden.Rmd`: This document will compare the DALY burden of communicable, maternal, neonatal, and nutritional diseases for the three countries.
 
@@ -43,7 +43,7 @@ Each group member should complete these steps, commit their changes, and push to
 
 Once all group members have completed their child documents, the repo owner should pull everyone's changes. 
 
-Then render the main `burden_of_disease_report.Rmd` which will pull in the completed child docs. Make sure that only key outputs are displayed in the main report, not the code or package loading messages. The render output should be in github_document format.
+Then render the main `burden_of_disease_report.Rmd` which will include the completed child docs. Make sure that only key outputs are displayed in the main report, not the code or package loading messages. The render output should be in github_document format.
 
 Commit and push the final rendered report to GitHub. 
 
