@@ -1,8 +1,8 @@
 # Non-Communicable Disease Burden (NCD)
 
-```{r}
+```{r echo=FALSE}
 # Load necessary packages
-pacman::p_load(tidyverse, knitr, here, janitor)
+pacman::p_load(tidyverse, knitr, here, janitor, pillar)
 
 # Import the non-communicable diseases data
 data_ncd <- read_csv(here("data", "burden-of-disease-ncd.csv"))
@@ -11,7 +11,7 @@ print(data_ncd)
 
 ## Table of Estimates for NCD Burden Over Time
 
-```{r}
+```{r echo=FALSE}
 # Here render a table for the DALY burden over time for the three countries 
 # You should pivot the data to show each country in a separate column.
 # Use kable() from the knitr package to render the table.
@@ -20,14 +20,18 @@ print(data_ncd)
 selected_countries <- subset(data_ncd, Entity %in% c("Malawi", "Zimbabwe", "Zambia"))
 
 #a little bit of cleaning
-selected_countries_clean <- selected_countries %>% 
+selected_countries_clean <- selected_countries %>%
   clean_names(case = "snake")
 
 #renaming some columns
-selected_countries_clean <- selected_countries_clean %>% 
+selected_countries_clean2 <- selected_countries_clean %>% 
   rename(country = entity,
-          daly = dal_ys_disability_adjusted_life_years_non_communicable_diseases_sex_both_age_age_standardized_rate) %>% 
-print(selected_countries_clean)
+          daly = dal_ys_disability_adjusted_life_years_non_communicable_diseases_sex_both_age_age_standardized_rate) 
+
+# Display the renamed data frame using pillar
+selected_countries_clean2 %>%
+  as_tibble() %>%
+  pillar::pillar()
 
 
 #pivoting the data
@@ -41,9 +45,9 @@ kable(daly_data_pivoted, format = "html", caption = "DALY Burden Over Time for T
 
 ## Plot Showing Trends in NCD Burden Over Time 
 
-```{r}
+```{r echo=FALSE}
 # Here, plot a line graph showing the trend of DALY burden for the chosen countries over time. You can use ggplot2 to create this plot. Each country's line should be a different color.
-ggplot(selected_countries_clean,
+ggplot(selected_countries_clean2,
        aes(x = year,
            y = daly,
            color = country)) +
@@ -55,7 +59,6 @@ ggplot(selected_countries_clean,
 
 ## Summary of NCD Burden Findings
 
-Provide a brief analysis based on the data presented in the table and chart. Highlight any significant findings or patterns. About 3 sentences.
 
 #KEY FINDINGS
 As the years are progressing it seems the DALY burden for the three countries are all dropping. Also starting from the 90s the DALY burden for the three countries was over 20000.
