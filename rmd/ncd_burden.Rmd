@@ -6,7 +6,6 @@ pacman::p_load(tidyverse, knitr, here, janitor, pillar)
 
 # Import the non-communicable diseases data
 data_ncd <- read_csv(here("data", "burden-of-disease-ncd.csv"))
-print(data_ncd)
 ```
 
 ## Table of Estimates for NCD Burden Over Time
@@ -29,15 +28,14 @@ selected_countries_clean2 <- selected_countries_clean %>%
           daly = dal_ys_disability_adjusted_life_years_non_communicable_diseases_sex_both_age_age_standardized_rate) 
 
 # Display the renamed data frame using pillar
-selected_countries_clean2 %>%
-  as_tibble() %>%
-  pillar::pillar()
+#selected_countries_clean2 %>%
+  #as_tibble() %>%
+  #pillar::pillar()
 
 
 #pivoting the data
 daly_data_pivoted <- selected_countries_clean2 %>%
   pivot_wider(names_from = country, values_from = daly)
-print(daly_data_pivoted)
 
 # Render the table using kable()
 kable(daly_data_pivoted, format = "html", caption = "DALY Burden Over Time for Three Countries")
@@ -59,6 +57,4 @@ ggplot(selected_countries_clean2,
 
 ## Summary of NCD Burden Findings
 
-
-#KEY FINDINGS
 As the years are progressing it seems the DALY burden for the three countries are all dropping. Also starting from the 90s the DALY burden for the three countries was over 20000.
